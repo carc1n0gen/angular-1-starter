@@ -3,3 +3,4 @@
 /node_modules
 *.map
 /.vscode
+mix-manifest.json
