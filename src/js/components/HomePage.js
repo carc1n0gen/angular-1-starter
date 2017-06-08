@@ -7,6 +7,7 @@ module.exports = {
                 <div class="title m-b-md">
                     {{msg}}
                 </div>
+                <span class="glyphicon glyphicon-user"></span>
             </div>
         </div>
     `
