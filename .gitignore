@@ -1,0 +1,5 @@
+/fonts
+/dist
+/node_modules
+*.map
+/.vscode
