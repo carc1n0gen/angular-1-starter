@@ -1,5 +1,5 @@
-import angular from 'angular';
+const angular = require('angular');
 
-import HomePage from './HomePage';
+const HomePage = require('./HomePage');
 
 angular.module('app').component('appHomePage', HomePage);
