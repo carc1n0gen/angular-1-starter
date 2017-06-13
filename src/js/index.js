@@ -1,9 +1,9 @@
-const angular = require('angular');
-const angularRoute = require('angular-route');
-const angularResource = require('angular-resource');
+require('../sass/index.scss');
 
+const angular = require('angular');
+require('angular-route');
+require('angular-resource');
 window.jQuery = window.$ = require('jquery');
-require('bootstrap-sass');
 
 angular.module('app', ['ngRoute', 'ngResource'])
     .config(($routeProvider) => {

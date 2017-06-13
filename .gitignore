@@ -1,6 +1,6 @@
-/fonts
-/dist
-/node_modules
-*.map
 /.vscode
+/node_modules
+/dist
+*.map
 mix-manifest.json
+npm-debug.log
