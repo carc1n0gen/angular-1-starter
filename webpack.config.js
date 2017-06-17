@@ -6,12 +6,20 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: './src/index.js',
         output: {
         filename: 'dist/js/bundle.js'
     },
     module: {
         rules: [{
+            test: /\.html$/,
+            use: [{
+                loader: 'html-loader',
+                options: {
+                    minimize: true
+                }
+            }]
+        }, {
             test: /\.js$/,
             exclude: /(node_modules|bower_components)/,
             use: {

@@ -1,4 +1,4 @@
-require('../sass/index.scss');
+require('./shared.scss');
 
 const angular = require('angular');
 require('angular-route');
@@ -7,11 +7,11 @@ require('angular-resource');
 angular.module('app', ['ngRoute', 'ngResource'])
     .config(($routeProvider) => {
         $routeProvider
-            .when('/home', { template: '<app-home-page></app-home-page>' })
-            .when('/encode/:arg', { template: '<app-encode-page></app-encode-page>' })
+            .when('/home', { template: '<home-page/>' })
+            .when('/encode/:arg', { template: '<encode-page/>' })
             .otherwise('/home');
     });
 
+require('./services');
 require('./controllers');
 require('./components');
-require('./services');
