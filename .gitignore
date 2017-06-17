@@ -1,6 +1,13 @@
+# OS stuff
+.DS_Store
+
+# IDE stuff
 /.vscode
+
+# nodejs stuff
 /node_modules
+npm-debug.log
+
+# Compiled output
 /dist
 *.map
-mix-manifest.json
-npm-debug.log
