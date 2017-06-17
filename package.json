@@ -1,11 +1,12 @@
 {
   "name": "angular-1-starter",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "node_modules/webpack/bin/webpack.js",
-    "watch": "node_modules/webpack/bin/webpack.js --watch",
-    "prod": "node_modules/webpack/bin/webpack.js --optimize-minimize",
-    "hot": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors"
+    "dev": "node_modules/.bin/webpack",
+    "watch": "node_modules/.bin/webpack --watch",
+    "prod": "node_modules/.bin/webpack --optimize-minimize",
+    "hot": "node_modules/.bin/webpack-dev-server --progress --colors"
   },
   "devDependencies": {
     "angular": "^1.6.4",

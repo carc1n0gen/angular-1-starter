@@ -8,7 +8,6 @@ angular.module('app', ['ngRoute', 'ngResource'])
     .config(($routeProvider) => {
         $routeProvider
             .when('/home', { template: '<home-page/>' })
-            .when('/encode/:arg', { template: '<encode-page/>' })
             .otherwise('/home');
     });
 
