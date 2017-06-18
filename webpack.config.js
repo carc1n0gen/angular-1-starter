@@ -1,14 +1,18 @@
+const path = require('path');
+
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractSass = new ExtractTextPlugin({
-    filename: "dist/css/bundle.css",
+    filename: "bundle.css",
     disable: process.env.NODE_ENV === "development"
 });
 
 module.exports = {
     entry: './src/index.js',
-        output: {
-        filename: 'dist/js/bundle.js'
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/dist/',
+        filename: 'bundle.js'
     },
     module: {
         rules: [{
@@ -38,6 +42,16 @@ module.exports = {
                 }],
                 fallback: "style-loader"
             })
+        }, { 
+            test: /\.ttf$/, loader: "file-loader?name=[name].[ext]&outputPath=fonts/bootstrap/"
+        },{
+            test: /\.eot$/, loader: "file-loader?name=[name].[ext]&outputPath=fonts/bootstrap/"
+        }, { 
+            test: /\.svg$/, loader: "file-loader?name=[name].[ext]&outputPath=fonts/bootstrap/"
+        }, { 
+            test: /\.woff$/, loader: "file-loader?name=[name].[ext]&outputPath=fonts/bootstrap/"
+        }, { 
+            test: /\.woff2$/, loader: "file-loader?name=[name].[ext]&outputPath=fonts/bootstrap/"
         }]
     },
     plugins: [

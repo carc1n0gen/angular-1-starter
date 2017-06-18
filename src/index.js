@@ -1,4 +1,4 @@
-require('./shared.scss');
+require('./main.scss');
 
 const angular = require('angular');
 require('angular-route');

@@ -1,0 +1,9 @@
+// Global/shared styles go here
+ @import 'variables';
+ @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+html, body {
+    color: #636b6f;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
