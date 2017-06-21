@@ -1,4 +1,7 @@
-const angular = require('angular');
+import angular from 'angular';
 
-angular.module('app').component('iconHeading', require('./icon-heading/icon-heading'));
-angular.module('app').component('homePage', require('./home-page/home-page'));
+import banner from './banner';
+import iconHeading from './icon-heading';
+
+export default angular.module('app.components', [banner, iconHeading])
+    .name;
