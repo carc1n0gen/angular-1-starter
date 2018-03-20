@@ -1,11 +1,10 @@
-import template from './banner.html';
+import template from './banner.html'
 
 export default {
     template: template,
     bindings: {
-        title: '=',
-        subtitle: '='
+        heading: '=',
+        subheading: '='
     },
-    controller: 'BannerController',
-    controllerAs: 'banner'
-};
+    controller: 'BannerController'
+}

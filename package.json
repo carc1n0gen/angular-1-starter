@@ -12,6 +12,7 @@
     "angular": "^1.6.4",
     "angular-resource": "^1.6.4",
     "angular-route": "^1.6.4",
+    "angular-sanitize": "^1.6.9",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.2",

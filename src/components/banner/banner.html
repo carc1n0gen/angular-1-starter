@@ -1,4 +1,7 @@
 <div class="jumbotron">
-    <h1>{{banner.title}}</h1>
-    <p>{{banner.subtitle}} <button ng-click="banner.onClick()" class="btn btn-primary">Click me</button></p>
+    <h1 ng-bind="$ctrl.heading"></h1>
+    <p>
+    	<span ng-bind="$ctrl.subheading"></span>
+    	<button ng-click="$ctrl.onClick()" class="btn btn-primary">Click me</button>
+    </p>
 </div>

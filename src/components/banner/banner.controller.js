@@ -1,9 +1,5 @@
 export default class BannerController {
-    constructor() {
-        
-    }
-
     onClick() {
-        alert('I got clicked!');
+        alert('I got clicked!')
     }
 }
