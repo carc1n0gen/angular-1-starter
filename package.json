@@ -6,7 +6,8 @@
     "dev": "node_modules/.bin/webpack",
     "watch": "node_modules/.bin/webpack --watch",
     "prod": "node_modules/.bin/webpack --optimize-minimize",
-    "hot": "node_modules/.bin/webpack-dev-server --progress --colors --hot --inline --content-base dist/"
+    "hot": "node_modules/.bin/webpack-dev-server --progress --colors --hot --inline --content-base dist/",
+    "clean": "bin/clean"
   },
   "devDependencies": {
     "angular": "^1.6.4",
