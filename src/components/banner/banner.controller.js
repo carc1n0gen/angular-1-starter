@@ -1,5 +1,9 @@
 export default class BannerController {
-    onClick() {
-        alert('I got clicked!')
-    }
+  constructor($window) {
+    this.$window = $window;
+  }
+
+  onClick() {
+    this.$window.alert('I got clicked!');
+  }
 }

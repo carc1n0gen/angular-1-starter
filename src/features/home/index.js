@@ -1,10 +1,10 @@
-import angular from 'angular'
-import ngRoute from 'angular-route'
+import angular from 'angular';
+import ngRoute from 'angular-route';
 
-import routing from './home.routes'
-import HomeController from './home.controller'
+import routing from './home.routes';
+import HomeController from './home.controller';
 
 export default angular.module('app.features.home', [ngRoute])
-    .config(routing)
-    .controller('HomeController', HomeController)
-    .name
+  .config(routing)
+  .controller('HomeController', HomeController)
+  .name;

@@ -1,7 +1,7 @@
-import angular from 'angular'
+import angular from 'angular';
 
-import iconHeading from './icon-heading.component'
+import iconHeading from './icon-heading.component';
 
 export default angular.module('app.components.icon-heading', [])
-    .component('iconHeading', iconHeading)
-    .name
+  .component('iconHeading', iconHeading)
+  .name;
