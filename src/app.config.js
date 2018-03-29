@@ -1,4 +1,4 @@
 export default ($locationProvider, $routeProvider) => {
-  // $locationProvider.html5Mode(true); // Havn't fully figured out how this works yet
+  $locationProvider.html5Mode(true);
   $routeProvider.otherwise('/');
 };

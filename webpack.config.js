@@ -50,4 +50,7 @@ module.exports = {
   plugins: [
     extractSass,
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
 };

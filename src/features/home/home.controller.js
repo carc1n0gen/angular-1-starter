@@ -1,12 +1,12 @@
 export default class HomeController {
-  constructor($window, $sanitize) {
-    this.$window = $window;
+  constructor($location, $sanitize) {
+    this.$location = $location;
     this.$sanitize = $sanitize;
     this.name = '';
     this.msg = 'Angular Starter';
   }
 
   onSubmit() {
-    this.$window.location.hash = `!/welcome/${this.$sanitize(this.name)}`;
+    this.$location.path(`/welcome/${this.$sanitize(this.name)}`);
   }
 }
