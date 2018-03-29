@@ -1,5 +1,4 @@
 # Angular 1 Starter
-=================
 
 This is my boilerplate starting point for developing angular 1 applications. It uses webpack to compile and bundle es2015+ javascript and sass.
 
